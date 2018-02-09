@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Handlee', cursive;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 1.25;
@@ -16,7 +16,7 @@ body {
 /*********** Navbar Section Start ***********/
 
 .navbar-inverse {
-    background-image: linear-gradient( to right top, rgba(218, 112, 214, 0.8), rgba(34, 139, 34, 0.8));
+    background-image: linear-gradient( to right top, rgba(119, 21, 116, 0.8), rgba(34, 139, 34, 0.8));
 }
 
 .navbar-inverse .navbar-nav>li>a {
@@ -43,7 +43,7 @@ body {
 
 .header {
     height: 95vh;
-    background-image: linear-gradient( to right top, rgba(34, 139, 34, 0.8), rgba(71, 61, 139, 0.8)), url(https://images.unsplash.com/photo-1499615767948-e6a89ef6060f?auto=format&fit=crop&w=1050&q=80);
+    background-image: linear-gradient( to right bottom, rgba(63, 10, 161, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1499615767948-e6a89ef6060f?auto=format&fit=crop&w=1050&q=80);
     background-size: cover;
     background-position: top;
     position: relative;
@@ -128,39 +128,39 @@ body {
 
 /*********** About Me Section Start ********/
 
-.about-me {
-    background-image: linear-gradient( to right top, rgba(44, 62, 80, 0.8), rgba(236, 240, 241, 0.8)), url(https://images.unsplash.com/photo-1504814532849-cff240bbc503?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=c3ba6869e7892d08269bd33c87c7bf0c&auto=format&fit=crop&w=968&q=80);
+#about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #5a5a5a;
+    background-image: linear-gradient( to left top, rgba(63, 10, 161, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1467703834117-04386e3dadd8?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2de85761d45711c4109ba4f215b6e21e&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     color: #fff;
-    padding: 60px;
-    position: relative;
 }
 
-.about-me p {
-    text-align: center;
-    font-size: 20px;
-    padding: 20px;
+.featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
 }
 
-.about-me a {
-    color: #000000;
+@media (min-width: 768px) {
+    .featurette-heading {
+        font-size: 30px;
+    }
 }
 
-.about-me img {
-    float: right;
+@media (min-width: 992px) {
+    .featurette-heading {
+        margin-top: 120px;
+    }
 }
 
-img .img-circle {
-    border-radius: 200%;
-    margin: 25px;
-}
-
-.quote {
-    color: #ffffff;
-    margin: 20px auto;
-    padding: auto;
-    text-align: center;
+.img-responsive {
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 
@@ -170,7 +170,7 @@ img .img-circle {
 /******** My Portfolio Section Start *******/
 
 #portfolio {
-    background-image: linear-gradient( to right top, rgba(63, 10, 161, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-0.3.5&s=b7099239dd77c0c7ca0495df863affeb&auto=format&fit=crop&w=1191&q=80);
+    background-image: linear-gradient( to left bottom, rgba(54, 10, 136, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1497892597262-2983614aa886?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=2051e3b8338218a0f163b9a6ab48bb84&auto=format&fit=crop&w=1350&q=80);
     background-size: cover;
     background-position: top;
     color: #fff;
@@ -194,9 +194,9 @@ img .img-circle {
 /********* Footer Section Start ************/
 
 footer #footer-above {
-    background-image: linear-gradient( to right top, rgba(63, 10, 161, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1496737018672-b1a6be2e949c?ixlib=rb-0.3.5&s=b7099239dd77c0c7ca0495df863affeb&auto=format&fit=crop&w=1191&q=80);
+    background-image: linear-gradient( to left top, rgba(63, 10, 161, 0.8), rgba(139, 0, 0, 0.8)), url(https://images.unsplash.com/photo-1495277493816-4c359911b7f1?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=cea505d70dc1770c4dd470ff9715ac36&auto=format&fit=crop&w=1346&q=80);
     background-size: cover;
-    background-position: top;
+    background-position: center;
     color: #fff;
     position: relative;
     display: -webkit-box;
@@ -244,10 +244,9 @@ footer h3 {
 #footer-below {
     color: #fff;
     font-size: 1.0em;
-    -webkit-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
     padding: 25px 0;
-    background-color: #2998E4;
+    background-color: #000;
+    background-position: center;
     text-align: center;
 }
 
